@@ -1,13 +1,31 @@
-// TODO: Write code to define and export the Employee class
-// construstor the name, age, school etc
-// write a property and method
-// protype the assisgnment 
-// push to array
-//run method
-//console log
-//append to html
-
+class Employee {
+    constructor(name, id, email){
+    this.name = name;
+    this.id = id;
+    this.email = email;
+    }
+    getName(){
+        return this.name;
+    }
+    getId(){
+        return this.id;
+    }
+    getEmail(){
+        return this.email
+    }
+    getRole(){
+        return "Employee";
+    }
+}
+module.exports = Employee;
+// * name
+// * id
+// * email
 // * getName()
 // * getId()
 // * getEmail()
 // * getRole() // Returns 'Employee'
+
+
+
+
