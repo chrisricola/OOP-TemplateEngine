@@ -135,7 +135,7 @@ const team = [];
     function addEngineer(){
         inquirer.prompt(engineerquestion).then((data) => {
             const engineer = new Engineer(
-                data.engineernname,
+                data.engineername,
                 data.engineerid,
                 data.engineeremail,
                 data.engineergithub
