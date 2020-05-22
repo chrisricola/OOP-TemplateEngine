@@ -82,12 +82,12 @@ const team = [];
         {
             type: "input",
             name: "engineeremail",
-            message:" Whats is your email?"
+            message:" Whats is the engineer's email?"
         },
         {
             type: "input",
             name: "engineergithub",
-            message:" What is your github profile?"
+            message:" What is the engineer's github profile?"
         },
         ];
 
@@ -129,8 +129,8 @@ const team = [];
                 data.school
             );
         team.push(intern)
-    })
-    setTimeout(addTeam, 1000);
+        setTimeout(addTeam, 1000);
+    })    
 }
     function addEngineer(){
         inquirer.prompt(engineerquestion).then((data) => {
@@ -141,8 +141,8 @@ const team = [];
                 data.engineergithub
             );
         team.push(engineer)
+        setTimeout(addTeam, 1000)
     }) 
-    setTimeout(addTeam, 1000)
 }
 init();
 
